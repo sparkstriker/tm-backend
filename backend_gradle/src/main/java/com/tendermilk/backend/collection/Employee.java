@@ -7,7 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -18,8 +17,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "employee")
 public class Employee {
 
-    @Id
-    private String employeeId;
+    private String id;
     private String firstName;
     private String lastName;
     private String email;
